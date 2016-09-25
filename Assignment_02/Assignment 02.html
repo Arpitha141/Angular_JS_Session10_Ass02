@@ -1,0 +1,30 @@
+<!DOCTYPE>
+<html ng-app="myapp">
+<head>
+    <title> Angular Js </title>
+    <script src="D:\Angular JS\angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</head>
+<body>
+
+    <script>
+
+
+		var module = angular.module("myapp" , []);
+
+		module.controller("mycontroller" , function($scope){
+
+			$scope.name = "Arpitha" ;
+			$scope.lastname = "R" ;
+		});
+
+    </script>
+
+<div ng-controller="mycontroller"> 
+
+    <h1>Demo of Angular Js Controller </h1>
+    <p> Name (Initialised inside Angular Js Controller)::</p><h2>{{name}} {{lastname}}</h2>
+</div>
+
+</body>
+</html>
